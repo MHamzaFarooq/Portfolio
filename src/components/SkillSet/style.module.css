@@ -12,7 +12,7 @@
 .right{
     flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .rightHelper{
     max-width: 370px;
@@ -67,6 +67,6 @@
     .right{
         flex: 1;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
 }

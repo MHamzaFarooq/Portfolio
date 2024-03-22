@@ -19,7 +19,7 @@
     width: 359px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 150px;
 }
 .heading{
@@ -42,7 +42,7 @@
 .somethinglol{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 30px;
 }
 .socialsContainer{
