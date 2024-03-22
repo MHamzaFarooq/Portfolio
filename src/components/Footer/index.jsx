@@ -9,7 +9,7 @@ export default function Footers() {
         <div className={styles.helper}>
             <div className={styles.left}>
                 <div className={styles.heading}>
-                    <span className={styles.span}>Let's </span>
+                    <span className={styles.span}>Let&apos;s </span>
                     Connect
                 </div>
                 <div className={styles.mail}>{links.gmail}</div>
