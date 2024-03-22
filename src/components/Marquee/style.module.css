@@ -1,0 +1,31 @@
+.slider{
+    font-family: var(--manrope);
+    font-size: 108px;
+    font-weight: 800;
+    line-height: 107px;
+    text-align: right;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+}
+.span{
+    font-size: 108px;
+    font-weight: 500;
+    line-height: 107px;
+    text-align: right;
+    color: white;
+}
+.sliderContainer{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.slider p{
+    color: black;
+    text-shadow: -1px -1px 0 rgba(134, 134, 137, 0.5), 1px -1px 0 rgba(134, 134, 137, 0.5), -1px 1px 0 rgba(134, 134, 137, 0.5), 1px 1px 0 rgba(134, 134, 137, 0.5);
+}
+.slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+}

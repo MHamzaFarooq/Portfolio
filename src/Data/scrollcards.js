@@ -1,0 +1,1 @@
+export const scrollcards = ['card1.jpeg','card2.jpeg']

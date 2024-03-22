@@ -1,0 +1,38 @@
+.header{
+    border: 1px solid black;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(167.6deg, #1C1C1C -32.99%, rgba(20, 20, 20, 0.4) 229.88%);
+    height: 62px;
+    padding: 0px 20px;
+    border-radius: 150px;
+    border: 0.5px solid;
+    border-image-source: linear-gradient(223.03deg, #FFFFFF -82.61%, rgba(255, 255, 255, 0) 81.03%);
+}
+.headerOption{
+    padding: 40px;
+    cursor: pointer;
+}
+
+.contactButton{
+    position: absolute;
+    height: 62px;
+    top: 2%;
+    right: 75px;
+    background: rgba(193, 208, 24, 1);
+    color: black;
+    padding: 0 40px;
+    border-radius: 100px;
+    border: none;
+
+    font-family: var(--manrope);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: center;
+    cursor: pointer;
+}
