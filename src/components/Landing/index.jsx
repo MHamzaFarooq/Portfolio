@@ -7,7 +7,7 @@ export default function Landing({isMobile}) {
   return (
     <div className={styles.Landing}>
       <div className={styles.landingFirst}>
-          <div className={styles.name}>I'm {landing.name}</div>
+          <div className={styles.name}>I&apos;m {landing.name}</div>
           <Image 
             className={styles.image}
             src={`${nextConfig.basePath}/images/${landing.pfp}`}
