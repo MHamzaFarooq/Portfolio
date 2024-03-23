@@ -88,8 +88,12 @@
     .right{
         max-height: none;
         padding-top: 80px;
+        min-width: auto;
     }
     .desc{
         display: none;
+    }
+    .left{
+        min-width: auto;
     }
 }
