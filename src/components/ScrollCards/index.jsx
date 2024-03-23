@@ -36,7 +36,7 @@ export default function ScrollCards() {
       <motion.div
         style={{
           rotate:rotateLeft,
-          translateX:isMobile?30:175,
+          translateX:isMobile?20:175,
         }} 
         className={`${styles.card} ${styles.firstCard}`}
       >
@@ -51,7 +51,7 @@ export default function ScrollCards() {
       <motion.div
         style={{
           rotate:rotateRight,
-          translateX:isMobile?-30:25,
+          translateX:isMobile?-40:25,
           translateY:isMobile?-70:-70,
         }} 
         className={`${styles.card} ${styles.secondCard}`}
