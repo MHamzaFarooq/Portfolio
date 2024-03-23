@@ -1,12 +1,16 @@
 import styles from './style.module.css'
 import { skillset } from '@/Data/skillset'
 import Parallax from '../parallax/parallax'
+import MobileParallax from '../parallaxMobile'
 
 export default function SkillSet({isMobile}) {
   return (
     <div className={styles.skillset}>
         <div className={styles.helper}>
-            { !isMobile &&  <div className={styles.left}><Parallax /></div>}
+            <div className={styles.left}>
+                {!isMobile && <Parallax /> }
+                {isMobile && <MobileParallax/>}
+            </div>
             <div className={styles.right}>
                 <div className={styles.rightHelper}>
                     <div className={styles.heading}>
