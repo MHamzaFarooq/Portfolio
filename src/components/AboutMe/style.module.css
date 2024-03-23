@@ -108,6 +108,9 @@
         text-align: left;
     }
     .right{
+        flex: none;
+        min-width:auto;
+        width: 359px;
         gap: 50px;
     }
     .left{
@@ -124,5 +127,9 @@
     }
     .about{
         padding: 80px 0px;
+    }
+    .helper{
+        width: 100%;
+        justify-content: center;
     }
 }
