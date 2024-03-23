@@ -8,8 +8,8 @@ export default function Work() {
       <div className={styles.helper}>
         <div className={styles.left}>
             <div className={styles.heading}>
-                <div className={styles.effect}>Some of</div>
-                <div>my</div>
+                <span className={styles.effect}>Some of </span>
+                <span className={styles.span}> my</span>
                 <div>work</div>
             </div>
             <div className={styles.desc}>{work.desc}</div>
