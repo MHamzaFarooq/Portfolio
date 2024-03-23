@@ -13,8 +13,6 @@
     overflow: hidden;
     padding: 80px 0px;
 }
-
-
 .item{
     position: relative;
     height: 217px;
@@ -58,6 +56,9 @@
 }
 
 @media (max-width:800px){
+    .box{
+        width: 98%;
+    }
     .item{
         height: auto;
     }

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     font-family: var(--manrope);
+    width: 100%;
 }
 .helper{
     width: 80%;

@@ -38,16 +38,20 @@ export default function Home() {
     <>
     {!isMobile && <Header/> }
     {isMobile && <BurgerMenu/>}
-    <Landing isMobile={isMobile}/>
-    <Work/>
-    <SkillSet isMobile={isMobile}/>
-    <Experience/>
-    <AboutMe/>
+    <div className={styles.main}>
+      <Landing isMobile={isMobile}/>
+      <Work/>
+      <SkillSet isMobile={isMobile}/>
+      <Experience/>
+      <AboutMe/>
+    </div>
     <div className={styles.control}>
       <Marquee />
     </div>
-    <Testimonials/>
-    <Footers/>
+    <div className={styles.main}>
+      <Testimonials/>
+      <Footers/>
+    </div>
     </>
   );
 }

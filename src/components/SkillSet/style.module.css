@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 0px;
+    width: 100%;
 }
 .helper{
     width: 80%;
@@ -68,5 +69,13 @@
         flex: 1;
         display: flex;
         justify-content: flex-start;
+    }
+}
+@media (max-width:800px){
+    .heading{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 39.63px;
+        text-align: left;
     }
 }

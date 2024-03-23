@@ -4,7 +4,6 @@
     justify-content: flex-start;
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
     position: relative;
 }
 .card{
@@ -20,20 +19,15 @@
     object-position: center;
     object-fit: cover;
 }
-/* .firstCard{
-    transform: translateX(175px);
-}
-.secondCard{
-    transform: translate(25px,-70px);
-}
-@media (max-width:1210px){
+@media (max-width:1208px){
     .scrollCardsContainer{
         justify-content: center;
     }
-    .firstCard{
-        transform: translateX(175px);
+}
+@media (max-width:600px) {
+    .card{
+        height: 370px;
+        width: auto;
+        border-radius: 20px;
     }
-    .secondCard{
-        transform: translate(0px,0px);
-    }
-} */
+}
