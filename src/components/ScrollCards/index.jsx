@@ -45,6 +45,7 @@ export default function ScrollCards() {
           width={375}
           height={550}
           alt='scroll-card-image'
+          loading='eager'
         />
       </motion.div>
       <motion.div
@@ -60,6 +61,7 @@ export default function ScrollCards() {
           width={375}
           height={550}
           alt='scroll-card-image'
+          loading='eager'
         />
       </motion.div>
     </div>

@@ -51,6 +51,7 @@ export default function SwiperWork() {
                 alt='horizon swiper image'
                 width={600}
                 height={648}
+                loading='eager'
               />
             </div>
             <div className={`${styles.linkButton} linkButton`}>
