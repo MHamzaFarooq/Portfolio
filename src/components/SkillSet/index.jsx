@@ -5,7 +5,7 @@ import MobileParallax from '../parallaxMobile'
 
 export default function SkillSet({isMobile}) {
   return (
-    <div className={styles.skillset}>
+    <div className={styles.skillset} id='skills'>
         <div className={styles.helper}>
             <div className={styles.left}>
                 {!isMobile && <Parallax /> }

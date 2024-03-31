@@ -3,7 +3,7 @@ import { experience } from '@/Data/experience'
 
 export default function Experience() {
   return (
-    <div className={styles.experience}>
+    <div className={styles.experience} id='experience'>
         <div className={styles.helper}>
             <div className={styles.heading}>
                 <span className={styles.span}>My </span>
