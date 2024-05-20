@@ -27,7 +27,7 @@
     height: 250px;
 }
 .span{
-    background: linear-gradient(93.26deg, #182DEE 4.11%, #F51919 22.18%, #EF7218 36.33%, #E2A917 49.22%, #BD00FF 64.34%);
+    background: linear-gradient(93.26deg, #BD00FF 4.11%, #F51919 22.18%, #EF7218 36.33%, #E2A917 49.22%, #BD00FF 64.34%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
