@@ -1,107 +1,120 @@
-.experience{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--manrope);
-    width: 100%;
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--manrope);
+  width: 100%;
 }
-.helper{
-    width: 80%;
+.helper {
+  width: 80%;
 }
-.item{
-    height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 0.25px solid rgba(255, 255, 255, 1)
+.item {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.25px solid rgba(255, 255, 255, 1);
 }
-.heading{
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 95.62px;
-    text-align: left;
-    padding: 50px 0px;
+.heading {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 95.62px;
+  text-align: left;
+  padding: 50px 0px;
 }
-.span{
-    background: rgba(136, 135, 140, 1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: block;
+.span {
+  background: rgba(136, 135, 140, 1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
 }
-.title{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 47.56px;
-    text-align: left;
-    color: rgba(187, 187, 187, 1);
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 47.56px;
+  text-align: left;
+  color: rgba(187, 187, 187, 1);
+  max-height: 66.75px;
+  overflow: hidden;
 }
-.company{
-    font-weight: 600;
-    line-height: 17.83px;
-    text-align: left;
-    color: rgba(134, 134, 138, 1);
+.titleItem {
+  padding: 8px 0px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.time{
-    font-weight: 600;
-    line-height: 17.83px;
-    text-align: left;
-}
-.type{
-    font-weight: 600;
-    line-height: 17.83px;
-    text-align: right;
-}
-.itemLeft{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-.itemRight{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    color: rgba(141, 138, 150, 1);
+.titleItem:nth-child(2) {
+  color: white;
 }
 
-@media (max-width:900px) {
-    .heading{
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 54.64px;
-        text-align: left;
-    }
-    .span{
-        display: inline;
-    }
-    .title{
-        font-size: 24px;
-        font-weight: 600;
-        line-height: auto;
-        text-align: left;
-    }
-    .company{
-        font-size: 14px;
-        font-weight: 600;
-        line-height: auto;
-        text-align: left;
-    }
-    .time{
-        font-size: 14px;
-        font-weight: 600;
-        line-height: auto;
-        text-align: left;
-    }
-    .type{
-        font-size: 14px;
-        font-weight: 600;
-        line-height: auto;
-        text-align: right;
-    }
-    .itemLeft{
-        gap: 15px;
-    }
-    .itemRight{
-        gap: 8px;
-    }
+.item:hover .titleItem {
+  transform: translateY(-100%);
+}
+.company {
+  font-weight: 600;
+  line-height: 17.83px;
+  text-align: left;
+  color: rgba(134, 134, 138, 1);
+}
+.time {
+  font-weight: 600;
+  line-height: 17.83px;
+  text-align: left;
+}
+.type {
+  font-weight: 600;
+  line-height: 17.83px;
+  text-align: right;
+}
+.itemLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.itemRight {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: rgba(141, 138, 150, 1);
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 54.64px;
+    text-align: left;
+  }
+  .span {
+    display: inline;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: auto;
+    text-align: left;
+  }
+  .company {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: auto;
+    text-align: left;
+  }
+  .time {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: auto;
+    text-align: left;
+  }
+  .type {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: auto;
+    text-align: right;
+  }
+  .itemLeft {
+    gap: 15px;
+  }
+  .itemRight {
+    gap: 8px;
+  }
 }

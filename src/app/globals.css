@@ -1,12 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to top right, #271c34, #000000, #140938);
 }
