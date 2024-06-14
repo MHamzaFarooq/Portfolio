@@ -4,6 +4,16 @@ import { links } from "@/Data/about";
 import Image from "next/image";
 import nextConfig from "../../../next.config";
 export default function Footers({ footerRef }) {
+  const handleHeaderOptionClick = (index) => {
+    const sectionId = footer[index].id;
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <footer className={styles.footer} id="contact">
       <div className={styles.helper}>
@@ -59,7 +69,11 @@ export default function Footers({ footerRef }) {
         <div className={styles.right}>
           {footer.map((item, index) => {
             return (
-              <div key={index} className={styles.item}>
+              <div
+                key={index}
+                className={styles.item}
+                onClick={() => handleHeaderOptionClick(index)}
+              >
                 <div className={styles.title}>
                   <div className={styles.titleItem}>{item.title}</div>
                   <div className={styles.titleItem}>{item.title}</div>
