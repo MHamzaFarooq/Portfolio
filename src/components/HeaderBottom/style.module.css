@@ -2,9 +2,7 @@
   border: 1px solid black;
   position: fixed;
   z-index: 100;
-  top: 2%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 2%;
   display: flex;
   align-items: center;
   background: linear-gradient(
@@ -21,6 +19,7 @@
     #ffffff -82.61%,
     rgba(255, 255, 255, 0) 81.03%
   );
+  transform: scale(0);
   backdrop-filter: blur(10px);
 }
 .headerOption {
@@ -29,14 +28,17 @@
 }
 
 .contactButton {
-  position: absolute;
-  height: 62px;
-  top: 2%;
-  right: 75px;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2%;
+  right: 55px;
   background: rgba(193, 208, 24, 1);
   color: black;
-  padding: 0 40px;
-  border-radius: 100px;
+  border-radius: 50%;
   border: none;
 
   font-family: var(--manrope);
@@ -45,4 +47,6 @@
   line-height: 21.86px;
   text-align: center;
   cursor: pointer;
+  z-index: 100;
+  transform: scale(0);
 }

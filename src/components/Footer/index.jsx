@@ -3,12 +3,12 @@ import { footer } from "@/Data/footer";
 import { links } from "@/Data/about";
 import Image from "next/image";
 import nextConfig from "../../../next.config";
-export default function Footers() {
+export default function Footers({ footerRef }) {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <div className={styles.helper}>
         <div className={styles.left}>
-          <div className={styles.heading}>
+          <div className={styles.heading} ref={footerRef}>
             <span className={styles.span}>Let&apos;s </span>
             Connect
           </div>
