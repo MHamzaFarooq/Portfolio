@@ -1,9 +1,18 @@
+import { useEffect, useRef } from "react";
 import styles from "./style.module.css";
 import { experience } from "@/Data/experience";
+import { useInView } from "framer-motion";
 
-export default function Experience() {
+export default function Experience({ setIsSelected }) {
+  const expRef = useRef(null);
+  const inView = useInView(expRef);
+  useEffect(() => {
+    if (inView) {
+      setIsSelected(2);
+    }
+  }, [inView, setIsSelected]);
   return (
-    <div className={styles.experience} id="experience">
+    <div className={styles.experience} id="experience" ref={expRef}>
       <div className={styles.helper}>
         <div className={styles.heading}>
           <span className={styles.span}>My </span>

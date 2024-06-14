@@ -16,7 +16,7 @@ import { useEffect, useRef, useState } from "react";
 export default function Home() {
   const headerOptions = ["Work", "Skills", "Experience", "Testimonials"];
   const [isMobile, setIsMobile] = useState(false);
-
+  const [isSelected, setIsSelected] = useState(null);
   const footerRef = useRef(null);
 
   useEffect(() => {
@@ -39,23 +39,34 @@ export default function Home() {
   }, []);
   return (
     <>
-      {!isMobile && <Header headerOptions={headerOptions} />}
       {!isMobile && (
-        <HeaderBottom headerOptions={headerOptions} footerRef={footerRef} />
+        <Header
+          headerOptions={headerOptions}
+          isSelected={isSelected}
+          setIsSelected={setIsSelected}
+        />
+      )}
+      {!isMobile && (
+        <HeaderBottom
+          headerOptions={headerOptions}
+          footerRef={footerRef}
+          isSelected={isSelected}
+          setIsSelected={setIsSelected}
+        />
       )}
       {isMobile && <BurgerMenu />}
       <div className={styles.main}>
-        <Landing isMobile={isMobile} />
-        <Work />
-        <SkillSet isMobile={isMobile} />
-        <Experience />
+        <Landing isMobile={isMobile} setIsSelected={setIsSelected} />
+        <Work setIsSelected={setIsSelected} />
+        <SkillSet isMobile={isMobile} setIsSelected={setIsSelected} />
+        <Experience setIsSelected={setIsSelected} />
         <AboutMe />
       </div>
       <div className={styles.control} id="testimonials">
         <Marquee />
       </div>
       <div className={styles.main}>
-        <Testimonials />
+        <Testimonials setIsSelected={setIsSelected} />
         <Footers footerRef={footerRef} />
       </div>
     </>

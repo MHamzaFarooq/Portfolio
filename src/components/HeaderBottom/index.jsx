@@ -1,10 +1,14 @@
-import { useState, useLayoutEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef, useEffect } from "react";
 import styles from "./style.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-export default function HeaderBottom({ headerOptions, footerRef }) {
-  const [isSelected, setIsSelected] = useState(0);
+export default function HeaderBottom({
+  headerOptions,
+  footerRef,
+  isSelected,
+  setIsSelected,
+}) {
   const topHeader = useRef(null);
   const contactButton = useRef(null);
   useLayoutEffect(() => {
@@ -92,7 +96,6 @@ export default function HeaderBottom({ headerOptions, footerRef }) {
             ease: "poweri.out",
           });
         },
-        markers: true,
       },
     });
   }, []);

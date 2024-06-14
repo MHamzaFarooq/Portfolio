@@ -1,10 +1,10 @@
-.control{
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    width: 100%;
+.control {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
 }
-.main{
-    width: 100%;
-    max-width: 1500px;
+.main {
+  width: 100%;
+  max-width: 1500px;
 }

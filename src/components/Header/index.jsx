@@ -3,8 +3,7 @@ import styles from "./style.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-export default function Header({ headerOptions }) {
-  const [isSelected, setIsSelected] = useState(0);
+export default function Header({ headerOptions, isSelected, setIsSelected }) {
   const topHeader = useRef(null);
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

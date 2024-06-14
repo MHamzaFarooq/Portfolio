@@ -3,9 +3,20 @@ import Marquee from "../Marquee";
 import { testimonials } from "@/Data/testimonials";
 import Image from "next/image";
 import nextConfig from "../../../next.config";
-export default function Testimonials() {
+import { useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
+export default function Testimonials({ setIsSelected }) {
+  const testRef = useRef(null);
+  const inView = useInView(testRef);
+
+  useEffect(() => {
+    if (inView) {
+      setIsSelected(3);
+    }
+  }, [inView, setIsSelected]);
+
   return (
-    <div className={styles.testimonials}>
+    <div className={styles.testimonials} ref={testRef}>
       <div className={styles.box}>
         {testimonials.map((item, index) => {
           return (
