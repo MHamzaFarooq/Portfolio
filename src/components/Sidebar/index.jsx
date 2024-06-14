@@ -60,6 +60,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
           {sidebarOptions.map((sidebarOption, index) => {
             return (
               <div
+                key={index}
                 className={styles.sidebarOption}
                 onClick={() => handleHeaderOptionClick(index)}
               >
