@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import styles from "./style.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -11,7 +11,7 @@ export default function HeaderBottom({
 }) {
   const topHeader = useRef(null);
   const contactButton = useRef(null);
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(topHeader.current, {
       scrollTrigger: {
