@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Footers from "@/components/Footer";
 import Marquee from "@/components/Marquee";
 import HeaderBottom from "@/components/HeaderBottom";
+import Sidebar from "@/components/Sidebar";
 
 import { useEffect, useRef, useState } from "react";
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [isSelected, setIsSelected] = useState(null);
   const footerRef = useRef(null);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -54,7 +56,13 @@ export default function Home() {
           setIsSelected={setIsSelected}
         />
       )}
-      {isMobile && <BurgerMenu />}
+      {isMobile && <BurgerMenu setIsSidebarOpen={setIsSidebarOpen} />}
+      {isMobile && (
+        <Sidebar
+          setIsSidebarOpen={setIsSidebarOpen}
+          isSidebarOpen={isSidebarOpen}
+        />
+      )}
       <div className={styles.main}>
         <Landing isMobile={isMobile} setIsSelected={setIsSelected} />
         <Work setIsSelected={setIsSelected} />
