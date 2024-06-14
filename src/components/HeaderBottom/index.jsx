@@ -5,8 +5,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function HeaderBottom({ headerOptions, footerRef }) {
   const [isSelected, setIsSelected] = useState(0);
-
-  console.log(footerRef);
   const topHeader = useRef(null);
   const contactButton = useRef(null);
   useLayoutEffect(() => {
@@ -41,14 +39,14 @@ export default function HeaderBottom({ headerOptions, footerRef }) {
           gsap.to(topHeader.current, {
             scale: 0,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
         onLeaveBack: () => {
           gsap.to(topHeader.current, {
             scale: 1,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
       },
@@ -62,14 +60,14 @@ export default function HeaderBottom({ headerOptions, footerRef }) {
           gsap.to(contactButton.current, {
             scale: 1,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
         onEnterBack: () => {
           gsap.to(contactButton.current, {
             scale: 0,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
       },
@@ -84,16 +82,17 @@ export default function HeaderBottom({ headerOptions, footerRef }) {
           gsap.to(contactButton.current, {
             scale: 0,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
         onLeaveBack: () => {
           gsap.to(contactButton.current, {
             scale: 1,
             duration: 0.5,
-            ease: "power1.out",
+            ease: "poweri.out",
           });
         },
+        markers: true,
       },
     });
   }, []);
