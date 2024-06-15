@@ -46,3 +46,10 @@
   text-align: center;
   cursor: pointer;
 }
+
+@media (max-width: 1080px) {
+  .header,
+  .contactButton {
+    display: none;
+  }
+}
